@@ -3,8 +3,8 @@
  * Auth: imad jahfel
  */
 #include <stdio.h>
-/*
- * main - Using puts to write a sentence followed by new line
+/**
+ * main -  puts "to write a sentence followed by new line.
  *
  *
  * Return: Always0.
