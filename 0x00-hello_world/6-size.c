@@ -6,7 +6,7 @@
 #include <stdio.h>
 
 /**
- * main - The size of various types base on the computer it is compiled and run on..
+ * main - The size of various types of data.
  *
  * Return: Always0.
  */
