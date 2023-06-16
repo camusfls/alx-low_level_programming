@@ -5,6 +5,7 @@
 /**
  * main - last degit of randomly generated number
  *
+ *
  * Return always 0
  */
 int main(void)
