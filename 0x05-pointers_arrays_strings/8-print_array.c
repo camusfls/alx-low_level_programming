@@ -1,3 +1,4 @@
+#include <main.h>
 /**
  * print_array - print the n elements of an array.
  * @a: tested  array

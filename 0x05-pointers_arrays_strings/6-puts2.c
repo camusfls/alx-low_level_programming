@@ -1,3 +1,5 @@
+#include <main.h>
+
 /**
  * puts2 - one character out of two, starting with the first one.
  * @str: tested string

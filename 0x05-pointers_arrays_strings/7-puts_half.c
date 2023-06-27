@@ -1,3 +1,4 @@
+#include <main.h>
 /**
  * puts_half - prints the last half of a string.
  * @str: tested string
