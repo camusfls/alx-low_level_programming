@@ -1,44 +1,45 @@
-#include "main.h"
-
+#include "holberton.h"
 /**
- * palind2 - obtains length of a
- * @a: string
- * @l: integer to count length
+ * is_prime_number - return the sqrt of a natural number.
+ * @n: natural number
  *
- * Return: On success 1.
- */
-int palind2(char *a, int l)
-{
-	if (*a == 0)
-		return (l - 1);
-	return (palind2(a + 1, l + 1));
-}
-/**
- * palind3 - compares string vs string reverse
- * @a: string
- * @l: length
  *
- * Return: On success 1.
+ * Return: 1 if is prime otherwise 0.
  */
-
-int palind3(char *a, int l)
+int is_prime_number(int n)
 {
-	if (*a != *(a + l))
+	if (n <= 1)
+	{
 		return (0);
-	else if (*a == 0)
+	}
+	else if (n == 2)
+	{
 		return (1);
-	return (palind3(a + 1, l - 2));
+	}
+	else
+	{
+		return (is_prime_manual(n, 2));
+	}
 }
 /**
- * is_palindrome - checks if a string is a palindrome
- * @s: string to evaluate
+ * is_prime_manual - calculate if the number is prime.
+ * @n: natural number
+ * @i: counter or divisor of n.
  *
- * Return: On success 1.
+ * Return: 1 if is prime 0 otherwise.
  */
-int is_palindrome(char *s)
+int is_prime_manual(int n, int i)
 {
-	int l;
-
-	l = palind2(s, 0);
-	return (palind3(s, l));
+	if (n % i == 0)
+	{
+		return (0);
+	}
+	else if (i == (n - 1) && n % i != 0)
+	{
+		return (1);
+	}
+	else
+	{
+		return (is_prime_manual(n, i + 1));
+	}
 }
